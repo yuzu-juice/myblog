@@ -5,7 +5,11 @@ const LayoutRoot = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <Header />
-            <main className="flex-1 w-full max-w-4xl p-8 rounded-lg">{children}</main>
+            <div className="flex justify-center">
+                <main className="flex-1 w-full max-w-4xl p-8 rounded-lg">
+                    {children}
+                </main>
+            </div>
             <Footer />
         </>
     );
