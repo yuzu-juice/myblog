@@ -6,7 +6,7 @@ const Footer = () => {
                     {/* Brand section */}
                     <div className="space-y-4">
                         <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text">
-                            テックブログ
+                            yuzu-juice.dev
                         </h3>
                         <p className="text-gray-500">
                             デジタルの最前線を、一記事ずつ探求しています ✨
@@ -20,17 +20,16 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2">
                             {[
-                                "ホーム",
-                                "記事一覧",
-                                "プロジェクト",
-                                "プロフィール",
+                                { label: "ホーム", href: "/" },
+                                { label: "記事一覧", href: "/posts" },
+                                { label: "プロフィール", href: "/profile" },
                             ].map((item) => (
-                                <li key={item}>
+                                <li key={item.label}>
                                     <a
-                                        href="#"
+                                        href={item.href}
                                         className="text-gray-500 hover:text-orange-500"
                                     >
-                                        {item}
+                                        {item.label}
                                     </a>
                                 </li>
                             ))}
