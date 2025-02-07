@@ -1,85 +1,86 @@
+import { Heart, BookOpen, User } from "lucide-react";
+
 const HomePage = () => {
     return (
-        <main className="min-h-screen bg-gray-50 flex flex-col items-center">
-            {/* Container for centering content */}
-            <div className="max-w-4xl mx-auto px-4 py-8">
+        <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
+            {/* Decorative elements */}
+            <div className="absolute top-0 left-0 w-32 h-32 bg-amber-100 rounded-full blur-3xl opacity-60" />
+            <div className="absolute top-40 right-20 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-60" />
+
+            {/* Main content container */}
+            <div className="relative max-w-5xl mx-auto px-6 py-12">
                 {/* Welcome Section */}
-                <section className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4 text-gray-800">
-                        Welcome to My Tech Blog
+                <section className="text-center mb-16 animate-fade-in">
+                    <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text">
+                        テックブログへようこそ
                     </h2>
-                    <p className="text-lg text-gray-600">
-                        This is a place where I share my knowledge and insights
-                        about the latest in technology, programming, and
-                        software development.
+                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                        技術、プログラミング、デジタルの世界についての探求を
+                        共有するための私の小さな空間です ✨
                     </p>
                 </section>
 
                 {/* Latest Posts Section */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
-                        Latest Posts
+                <section className="mb-16">
+                    <h2 className="text-2xl font-bold mb-8 text-center text-gray-800 flex items-center justify-center gap-2">
+                        <BookOpen className="w-6 h-6 text-orange-500" />
+                        最新の記事
                     </h2>
-                    <div className="grid gap-6 md:grid-cols-3">
-                        <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                                Understanding React Hooks
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                A deep dive into React Hooks and how to use them
-                                effectively.
-                            </p>
-                            <a
-                                href="#"
-                                className="text-blue-600 hover:text-blue-800 font-medium"
+                    <div className="grid gap-8 md:grid-cols-3">
+                        {[
+                            {
+                                title: "React Hooksを理解する",
+                                description:
+                                    "React Hooksの深い理解と効果的な使い方について",
+                                color: "from-orange-400",
+                            },
+                            {
+                                title: "モダンCSSガイド",
+                                description:
+                                    "CSSの最新機能とテクニックについて学ぶ",
+                                color: "from-amber-400",
+                            },
+                            {
+                                title: "JavaScript ES2021の新機能",
+                                description: "ES2021で導入された新機能の概要",
+                                color: "from-orange-400",
+                            },
+                        ].map((post, index) => (
+                            <article
+                                key={index}
+                                className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
                             >
-                                Read more →
-                            </a>
-                        </article>
-
-                        <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                                A Guide to Modern CSS
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Learn about the latest features and techniques
-                                in CSS.
-                            </p>
-                            <a
-                                href="#"
-                                className="text-blue-600 hover:text-blue-800 font-medium"
-                            >
-                                Read more →
-                            </a>
-                        </article>
-
-                        <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                                JavaScript ES2021 Features
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                An overview of the new features introduced in
-                                ES2021.
-                            </p>
-                            <a
-                                href="#"
-                                className="text-blue-600 hover:text-blue-800 font-medium"
-                            >
-                                Read more →
-                            </a>
-                        </article>
+                                <div className="absolute inset-x-0 -top-px h-px w-full bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${post.color} to-purple-500" />
+                                <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-pink-600 transition-colors">
+                                    {post.title}
+                                </h3>
+                                <p className="text-gray-600 mb-4 leading-relaxed">
+                                    {post.description}
+                                </p>
+                                <a
+                                    href="#"
+                                    className="inline-flex items-center gap-1 text-orange-500 hover:text-orange-600 font-medium"
+                                >
+                                    もっと読む
+                                    <Heart className="w-4 h-4" />
+                                </a>
+                            </article>
+                        ))}
                     </div>
                 </section>
 
                 {/* About Me Section */}
-                <section className="text-center">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-800">
-                        About Me
-                    </h2>
-                    <p className="text-lg text-gray-600">
-                        I'm a software developer with a passion for learning and
-                        teaching. Follow my blog to stay updated with the latest
-                        trends in tech.
+                <section className="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 max-w-2xl mx-auto">
+                    <div className="flex items-center justify-center gap-2 mb-4">
+                        <User className="w-6 h-6 text-purple-500" />
+                        <h2 className="text-2xl font-bold text-gray-800">
+                            プロフィール
+                        </h2>
+                    </div>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        学びと教えることに情熱を持つソフトウェア開発者です。
+                        コーディング以外の時間は、新しい技術を探求したり、
+                        ブログを書いたり、タピオカを楽しんでいます 🧋
                     </p>
                 </section>
             </div>
