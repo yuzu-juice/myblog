@@ -1,6 +1,16 @@
 import { BookOpen, Heart, Github, Twitter, Award } from "lucide-react";
+import { useEffect } from "react";
 
 const ProfilePage = () => {
+    useEffect(() => {
+        // LinkedIn Profile Badge Script
+        const script = document.createElement("script");
+        script.src = "https://platform.linkedin.com/badges/js/profile.js";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+    }, []);
+
     return (
         <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 pt-20">
             <div className="max-w-4xl mx-auto px-6 py-12">
@@ -82,25 +92,38 @@ const ProfilePage = () => {
                     <div className="space-y-4">
                         {[
                             {
-                                name: "hoge",
-                                date: "2023年取得",
+                                name: "応用情報技術者",
+                                date: "2023年4月",
+                                org: "IPA",
                             },
                             {
-                                name: "hoge",
-                                date: "2022年取得",
+                                name: "情報セキュリティマネジメント",
+                                date: "2023年9月",
+                                org: "IPA",
                             },
                             {
-                                name: "hoge",
-                                date: "2021年取得",
+                                name: "基本情報技術者",
+                                date: "2023年4月",
+                                org: "IPA",
+                            },
+                            {
+                                name: "ITパスポート",
+                                date: "2022年8月",
+                                org: "IPA",
                             },
                         ].map((cert) => (
                             <div
                                 key={cert.name}
                                 className="flex justify-between items-center p-4 bg-orange-50 rounded-lg"
                             >
-                                <span className="text-gray-700 font-medium">
-                                    {cert.name}
-                                </span>
+                                <div>
+                                    <span className="text-gray-700 font-medium">
+                                        {cert.name}
+                                    </span>
+                                    <span className="text-gray-500 text-sm ml-2">
+                                        ({cert.org})
+                                    </span>
+                                </div>
                                 <span className="text-gray-500 text-sm">
                                     {cert.date}
                                 </span>
