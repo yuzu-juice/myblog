@@ -53,6 +53,10 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
+                <div className="mt-8 text-center text-gray-500 text-sm">
+                    Copyright © {new Date().getFullYear()} yuzu-juice All rights
+                    reserved.
+                </div>
             </div>
         </footer>
     );
