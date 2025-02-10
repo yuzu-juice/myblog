@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Heart } from 'lucide-react'
 
 const AboutMe = () => {
     return (
@@ -9,13 +9,12 @@ const AboutMe = () => {
             </h2>
             <div className="prose prose-orange">
                 <p className="text-gray-600 leading-relaxed">
-                    フロントエンド開発に情熱を注ぐエンジニアです。
-                    React、TypeScript、Next.jsを主に使用しており、
+                    フロントエンド開発に情熱を注ぐエンジニアです。 React、TypeScript、Next.jsを主に使用しており、
                     UIのクオリティとユーザー体験の向上に特にこだわっています。
                 </p>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default AboutMe;
+export default AboutMe

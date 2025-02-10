@@ -1,23 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false)
 
     // Handle scroll effect
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+            setIsScrolled(window.scrollY > 20)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                isScrolled
-                    ? "bg-white/80 backdrop-blur-md shadow-sm"
-                    : "bg-transparent"
+                isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
             }`}
         >
             <style>{`
@@ -50,9 +48,9 @@ const Header = () => {
                     {/* Navigation */}
                     <nav className="flex items-center space-x-8">
                         {[
-                            { label: "ホーム", href: "/" },
-                            { label: "記事一覧", href: "/posts" },
-                            { label: "プロフィール", href: "/profile" },
+                            { label: 'ホーム', href: '/' },
+                            { label: '記事一覧', href: '/posts' },
+                            { label: 'プロフィール', href: '/profile' }
                         ].map((item) => (
                             <a
                                 key={item.label}
@@ -66,7 +64,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

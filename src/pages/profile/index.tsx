@@ -1,19 +1,9 @@
-import { Github, Twitter } from "lucide-react";
-import { useEffect } from "react";
-import AboutMe from "../../components/profile/AboutMe";
-import Skills from "../../components/profile/Skills";
-import Certifications from "../../components/profile/Certifications";
+import { Github, Twitter } from 'lucide-react'
+import AboutMe from '../../components/profile/AboutMe'
+import Skills from '../../components/profile/Skills'
+import Certifications from '../../components/profile/Certifications'
 
 const ProfilePage = () => {
-    useEffect(() => {
-        // LinkedIn Profile Badge Script
-        const script = document.createElement("script");
-        script.src = "https://platform.linkedin.com/badges/js/profile.js";
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-    }, []);
-
     return (
         <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 pt-20">
             <div className="max-w-4xl mx-auto px-6 py-12">
@@ -21,7 +11,7 @@ const ProfilePage = () => {
                 <section className="text-center mb-16">
                     <div className="mb-6">
                         <img
-                            src="/profile-image.jpg"
+                            src="https://avatars.githubusercontent.com/u/121703872?v=4"
                             alt="Profile"
                             className="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg"
                         />
@@ -31,16 +21,10 @@ const ProfilePage = () => {
                     </h1>
                     <p className="text-lg text-gray-600 mb-6">Engineer</p>
                     <div className="flex justify-center gap-4">
-                        <a
-                            href="https://github.com/yuzu-juice"
-                            className="text-gray-600 hover:text-orange-500"
-                        >
+                        <a href="https://github.com/yuzu-juice" className="text-gray-600 hover:text-orange-500">
                             <Github className="w-6 h-6" />
                         </a>
-                        <a
-                            href="https://x.com/yuzu_juice_sec"
-                            className="text-gray-600 hover:text-orange-500"
-                        >
+                        <a href="https://x.com/yuzu_juice_sec" className="text-gray-600 hover:text-orange-500">
                             <Twitter className="w-6 h-6" />
                         </a>
                     </div>
@@ -51,7 +35,7 @@ const ProfilePage = () => {
                 <Certifications />
             </div>
         </main>
-    );
-};
+    )
+}
 
-export default ProfilePage;
+export default ProfilePage

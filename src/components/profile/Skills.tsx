@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { BookOpen } from 'lucide-react'
 
 const Skills = () => {
     return (
@@ -8,24 +8,14 @@ const Skills = () => {
                 Skills
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {[
-                    "React",
-                    "TypeScript",
-                    "Next.js",
-                    "Tailwind CSS",
-                    "Node.js",
-                    "GraphQL",
-                ].map((skill) => (
-                    <div
-                        key={skill}
-                        className="bg-orange-50 rounded-lg p-3 text-center"
-                    >
+                {['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Node.js', 'GraphQL'].map((skill) => (
+                    <div key={skill} className="bg-orange-50 rounded-lg p-3 text-center">
                         <span className="text-gray-700">{skill}</span>
                     </div>
                 ))}
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Skills;
+export default Skills

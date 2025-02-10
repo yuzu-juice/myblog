@@ -8,27 +8,20 @@ const Footer = () => {
                         <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text">
                             yuzu-juice.dev
                         </h3>
-                        <p className="text-gray-500">
-                            デジタルの最前線を、一記事ずつ探求しています ✨
-                        </p>
+                        <p className="text-gray-500">デジタルの最前線を、一記事ずつ探求しています ✨</p>
                     </div>
 
                     {/* Quick links */}
                     <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">
-                            クイックリンク
-                        </h4>
+                        <h4 className="font-semibold text-gray-900 mb-4">クイックリンク</h4>
                         <ul className="space-y-2">
                             {[
-                                { label: "ホーム", href: "/" },
-                                { label: "記事一覧", href: "/posts" },
-                                { label: "プロフィール", href: "/profile" },
+                                { label: 'ホーム', href: '/' },
+                                { label: '記事一覧', href: '/posts' },
+                                { label: 'プロフィール', href: '/profile' }
                             ].map((item) => (
                                 <li key={item.label}>
-                                    <a
-                                        href={item.href}
-                                        className="text-gray-500 hover:text-orange-500"
-                                    >
+                                    <a href={item.href} className="text-gray-500 hover:text-orange-500">
                                         {item.label}
                                     </a>
                                 </li>
@@ -38,9 +31,7 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">
-                            ニュースレター購読
-                        </h4>
+                        <h4 className="font-semibold text-gray-900 mb-4">ニュースレター購読</h4>
                         <form className="space-y-2">
                             <input
                                 type="email"
@@ -54,12 +45,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-8 text-center text-gray-500 text-sm">
-                    Copyright © {new Date().getFullYear()} yuzu-juice All rights
-                    reserved.
+                    Copyright © {new Date().getFullYear()} yuzu-juice All rights reserved.
                 </div>
             </div>
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

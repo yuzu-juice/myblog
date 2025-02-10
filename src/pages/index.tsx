@@ -1,4 +1,4 @@
-import { Heart, BookOpen } from "lucide-react";
+import { Heart, BookOpen } from 'lucide-react'
 
 const HomePage = () => {
     return (
@@ -18,22 +18,20 @@ const HomePage = () => {
                     <div className="grid gap-8 md:grid-cols-3">
                         {[
                             {
-                                title: "React Hooksを理解する",
-                                description:
-                                    "React Hooksの深い理解と効果的な使い方について",
-                                color: "from-orange-400",
+                                title: 'React Hooksを理解する',
+                                description: 'React Hooksの深い理解と効果的な使い方について',
+                                color: 'from-orange-400'
                             },
                             {
-                                title: "モダンCSSガイド",
-                                description:
-                                    "CSSの最新機能とテクニックについて学ぶ",
-                                color: "from-amber-400",
+                                title: 'モダンCSSガイド',
+                                description: 'CSSの最新機能とテクニックについて学ぶ',
+                                color: 'from-amber-400'
                             },
                             {
-                                title: "JavaScript ES2021の新機能",
-                                description: "ES2021で導入された新機能の概要",
-                                color: "from-orange-400",
-                            },
+                                title: 'JavaScript ES2021の新機能',
+                                description: 'ES2021で導入された新機能の概要',
+                                color: 'from-orange-400'
+                            }
                         ].map((post, index) => (
                             <article
                                 key={index}
@@ -43,9 +41,7 @@ const HomePage = () => {
                                 <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-pink-600 transition-colors">
                                     {post.title}
                                 </h3>
-                                <p className="text-gray-600 mb-4 leading-relaxed">
-                                    {post.description}
-                                </p>
+                                <p className="text-gray-600 mb-4 leading-relaxed">{post.description}</p>
                                 <a
                                     href="#"
                                     className="inline-flex items-center gap-1 text-orange-500 hover:text-orange-600 font-medium"
@@ -59,7 +55,7 @@ const HomePage = () => {
                 </section>
             </div>
         </main>
-    );
-};
+    )
+}
 
-export default HomePage;
+export default HomePage
