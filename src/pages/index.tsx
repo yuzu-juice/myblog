@@ -1,4 +1,4 @@
-import { Heart, BookOpen, User } from "lucide-react";
+import { Heart, BookOpen } from "lucide-react";
 
 const HomePage = () => {
     return (
