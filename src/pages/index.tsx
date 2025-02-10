@@ -9,17 +9,6 @@ const HomePage = () => {
 
             {/* Main content container */}
             <div className="relative max-w-5xl mx-auto px-6 py-12">
-                {/* Welcome Section */}
-                <section className="text-center mb-16 animate-fade-in">
-                    <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text">
-                        テックブログへようこそ
-                    </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                        技術、プログラミング、デジタルの世界についての探求を
-                        共有するための私の小さな空間です ✨
-                    </p>
-                </section>
-
                 {/* Latest Posts Section */}
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold mb-8 text-center text-gray-800 flex items-center justify-center gap-2">
@@ -67,21 +56,6 @@ const HomePage = () => {
                             </article>
                         ))}
                     </div>
-                </section>
-
-                {/* About Me Section */}
-                <section className="text-center bg-white rounded-2xl p-8 shadow-sm border border-gray-100 max-w-2xl mx-auto">
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                        <User className="w-6 h-6 text-purple-500" />
-                        <h2 className="text-2xl font-bold text-gray-800">
-                            プロフィール
-                        </h2>
-                    </div>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        学びと教えることに情熱を持つソフトウェア開発者です。
-                        コーディング以外の時間は、新しい技術を探求したり、
-                        ブログを書いたり、タピオカを楽しんでいます 🧋
-                    </p>
                 </section>
             </div>
         </main>

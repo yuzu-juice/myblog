@@ -40,9 +40,11 @@ const Header = () => {
                 <div className="flex items-center justify-between h-16 sm:h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text Oswald">
-                            yuzu-juice.dev
-                        </h1>
+                        <a href="/">
+                            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 text-transparent bg-clip-text Oswald">
+                                yuzu-juice.dev
+                            </h1>
+                        </a>
                     </div>
 
                     {/* Navigation */}
