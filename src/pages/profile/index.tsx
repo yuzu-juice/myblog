@@ -21,10 +21,20 @@ const ProfilePage = () => {
                     </h1>
                     <p className="text-lg text-gray-600 mb-6">Engineer</p>
                     <div className="flex justify-center gap-4">
-                        <a href="https://github.com/yuzu-juice" className="text-gray-600 hover:text-orange-500">
+                        <a
+                            href="https://github.com/yuzu-juice"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-orange-500"
+                        >
                             <Github className="w-6 h-6" />
                         </a>
-                        <a href="https://x.com/yuzu_juice_sec" className="text-gray-600 hover:text-orange-500">
+                        <a
+                            href="https://x.com/yuzu_juice_sec"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-orange-500"
+                        >
                             <Twitter className="w-6 h-6" />
                         </a>
                     </div>
