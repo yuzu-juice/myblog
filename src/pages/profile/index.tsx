@@ -6,6 +6,11 @@ import Certifications from '../../components/profile/Certifications'
 const ProfilePage = () => {
     return (
         <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 pt-20">
+            {/* Construction Notice */}
+            <div className="w-full bg-yellow-400 py-4 text-center fixed top-0 left-0 z-50 shadow-md">
+                <p className="text-2xl font-bold text-gray-800">このサイトは作成中です</p>
+            </div>
+
             <div className="max-w-4xl mx-auto px-6 py-12">
                 {/* Profile Header */}
                 <section className="text-center mb-16">
