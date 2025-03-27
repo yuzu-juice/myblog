@@ -9,11 +9,6 @@ const ProfilePage = () => {
             <div className="max-w-4xl mx-auto px-6 py-12">
                 {/* Profile Header */}
                 <section className="text-center mb-16">
-                    {/* Construction Notice */}
-                    <div className="bg-yellow-400 py-3 mb-8 rounded-lg shadow-md">
-                        <p className="text-2xl font-bold text-gray-800">このサイトは作成中です</p>
-                    </div>
-
                     <div className="mb-6">
                         <img
                             src="https://avatars.githubusercontent.com/u/121703872?v=4"
