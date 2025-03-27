@@ -10,6 +10,16 @@ interface Certification {
 const certificationsByCategory: Record<string, Certification[]> = {
     Google: [
         {
+            name: 'Associate Google Workspace Administrator Certification',
+            issueDate: new Date('Mar 1, 2025'),
+            expireDate: new Date('Mar 1, 2028')
+        },
+        {
+            name: 'Professional Cloud Database Engineer Certification',
+            issueDate: new Date('Mar 1, 2025'),
+            expireDate: new Date('Mar 1, 2027')
+        },
+        {
             name: 'Associate Data Practitioner Certification',
             issueDate: new Date('Feb 1, 2025'),
             expireDate: new Date('Feb 1, 2028')
