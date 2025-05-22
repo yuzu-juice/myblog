@@ -1,60 +1,69 @@
-import { Heart, BookOpen } from 'lucide-react'
+import { Terminal } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 
 const HomePage = () => {
+    return <div className="flex justify-center">まだ作成中です！</div>
     return (
-        <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
-            {/* Decorative elements */}
-            <div className="absolute top-0 left-0 w-32 h-32 bg-amber-100 rounded-full blur-3xl opacity-60" />
-            <div className="absolute top-40 right-20 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-60" />
-
-            {/* Main content container */}
-            <div className="relative max-w-5xl mx-auto px-6 py-12">
+        <div>
+            <div className="relative">
                 {/* Latest Posts Section */}
                 <section className="mb-16">
-                    <h2 className="text-2xl font-bold mb-8 text-center text-gray-800 flex items-center justify-center gap-2">
-                        <BookOpen className="w-6 h-6 text-orange-500" />
-                        最新の記事
+                    <h2 className="text-3xl font-bold mb-8 text-center text-primary flex items-center justify-center gap-2">
+                        <Terminal className="w-7 h-7" />
+                        Latest Posts
                     </h2>
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {[
                             {
-                                title: 'React Hooksを理解する',
-                                description: 'React Hooksの深い理解と効果的な使い方について',
-                                color: 'from-orange-400'
-                            },
-                            {
-                                title: 'モダンCSSガイド',
-                                description: 'CSSの最新機能とテクニックについて学ぶ',
-                                color: 'from-amber-400'
-                            },
-                            {
-                                title: 'JavaScript ES2021の新機能',
-                                description: 'ES2021で導入された新機能の概要',
-                                color: 'from-orange-400'
+                                title: 'Deconstructing React Hooks',
+                                description: 'A deep dive into React Hooks and their effective usage patterns.',
+                                tags: ['react', 'hooks', 'javascript']
                             }
                         ].map((post, index) => (
-                            <article
+                            <Card
                                 key={index}
-                                className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
+                                className="group relative bg-card border-border hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 flex flex-col"
                             >
-                                <div className="absolute inset-x-0 -top-px h-px w-full bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${post.color} to-purple-500" />
-                                <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-pink-600 transition-colors">
-                                    {post.title}
-                                </h3>
-                                <p className="text-gray-600 mb-4 leading-relaxed">{post.description}</p>
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center gap-1 text-orange-500 hover:text-orange-600 font-medium"
-                                >
-                                    もっと読む
-                                    <Heart className="w-4 h-4" />
-                                </a>
-                            </article>
+                                <CardHeader>
+                                    <CardTitle className="text-xl font-semibold text-primary group-hover:underline">
+                                        <Link to={`/posts/${post.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                                            {post.title}
+                                        </Link>
+                                    </CardTitle>
+                                    <CardDescription className="text-card-foreground text-sm">
+                                        {post.description}
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex-grow">
+                                    <div className="mb-4">
+                                        {post.tags.map((tag) => (
+                                            <Badge
+                                                key={tag}
+                                                variant="default"
+                                                className="mr-2 mb-2 bg-primary text-primary-foreground hover:bg-primary/80"
+                                            >
+                                                #{tag}
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                </CardContent>
+                                <CardFooter>
+                                    <Button asChild variant="link" className="p-0 h-auto">
+                                        <Link
+                                            to={`/posts/${post.title.toLowerCase().replace(/\s+/g, '-')}`}
+                                            className="inline-flex items-center gap-1 font-medium text-sm"
+                                        ></Link>
+                                    </Button>
+                                </CardFooter>
+                            </Card>
                         ))}
                     </div>
                 </section>
             </div>
-        </main>
+        </div>
     )
 }
 
