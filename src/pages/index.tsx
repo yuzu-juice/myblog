@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from '@/components/ui/badge'
 
 const HomePage = () => {
-    return <div className="flex justify-center">まだ作成中です！</div>
+    return <div className="flex justify-center animate-bounce">まだ作成中です！</div>
     return (
         <div>
             <div className="relative">
