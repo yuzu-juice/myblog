@@ -1,5 +1,6 @@
 import { Code } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import languages from '@/data/languages.json'
 
 const Languages = () => {
     return (
@@ -9,7 +10,7 @@ const Languages = () => {
                 Main Languages
             </h2>
             <div className="flex flex-wrap gap-2">
-                {['C', 'TypeScript', 'Python'].map((lang) => (
+                {languages.map((lang) => (
                     <Badge key={lang} variant="default" className="text-sm px-3 py-1">
                         {lang}
                     </Badge>
