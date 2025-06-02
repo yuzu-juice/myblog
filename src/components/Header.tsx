@@ -17,8 +17,9 @@ const Header = () => {
                         <nav className="flex items-center space-x-6">
                             {[
                                 { label: 'Home', href: '/' },
-                                { label: 'Posts', href: '/posts' }, // Assuming a /posts route will exist
-                                { label: 'Profile', href: '/profile' }
+                                { label: 'Works', href: '/works' },
+                                { label: 'Posts', href: '/posts' },
+                                { label: 'About', href: '/about' }
                             ].map((item) => (
                                 <Link
                                     key={item.label}

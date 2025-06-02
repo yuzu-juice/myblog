@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LayoutRoot from './Layouts/LayoutRoot'
 import HomePage from './pages'
-import ProfilePage from './pages/profile'
+import WorksPage from './pages/works'
+import AboutPage from './pages/about'
 import NotFoundPage from './pages/404'
 import './App.css'
 
@@ -11,7 +12,8 @@ function App() {
             <LayoutRoot>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/works" element={<WorksPage />} />
+                    <Route path="/about" element={<AboutPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </LayoutRoot>

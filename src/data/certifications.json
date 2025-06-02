@@ -1,0 +1,227 @@
+{
+    "Google": [
+        {
+            "name": "Professional Machine Learning Engineer",
+            "issueDate": "2025-05-01",
+            "expireDate": "2027-05-01"
+        },
+        {
+            "name": "Associate Google Workspace Administrator",
+            "issueDate": "2025-03-01",
+            "expireDate": "2028-03-01"
+        },
+        {
+            "name": "Professional Cloud Database Engineer",
+            "issueDate": "2025-03-01",
+            "expireDate": "2027-03-01"
+        },
+        {
+            "name": "Professional Cloud Network Engineer",
+            "issueDate": "2025-02-01",
+            "expireDate": "2027-02-01"
+        },
+        {
+            "name": "Associate Data Practitioner",
+            "issueDate": "2025-02-01",
+            "expireDate": "2028-02-01"
+        },
+        {
+            "name": "Professional Data Engineer",
+            "issueDate": "2025-02-01",
+            "expireDate": "2027-02-01"
+        },
+        {
+            "name": "Professional Cloud DevOps Engineer",
+            "issueDate": "2025-01-01",
+            "expireDate": "2027-01-01"
+        },
+        {
+            "name": "Professional Google Workspace Administrator",
+            "issueDate": "2024-09-01",
+            "expireDate": "2026-09-01"
+        },
+        {
+            "name": "Professional Cloud Developer",
+            "issueDate": "2024-07-01",
+            "expireDate": "2026-07-01"
+        },
+        {
+            "name": "Professional Cloud Architect",
+            "issueDate": "2024-02-01",
+            "expireDate": "2026-02-01"
+        },
+        {
+            "name": "Associate Cloud Engineer",
+            "issueDate": "2023-11-01",
+            "expireDate": "2026-11-01"
+        },
+        {
+            "name": "Professional Cloud Security Engineer",
+            "issueDate": "2023-11-01",
+            "expireDate": "2025-11-01"
+        },
+        {
+            "name": "Cloud Digital Leader",
+            "issueDate": "2023-10-01",
+            "expireDate": "2026-10-01"
+        }
+    ],
+    "AWS": [
+        {
+            "name": "AWS Certified Machine Learning Engineer - Associate",
+            "issueDate": "2024-12-01",
+            "expireDate": "2027-12-01"
+        },
+        {
+            "name": "AWS Certified AI Practitioner",
+            "issueDate": "2024-11-01",
+            "expireDate": "2027-11-01"
+        },
+        {
+            "name": "AWS Certified Data Engineer - Associate",
+            "issueDate": "2024-06-01",
+            "expireDate": "2027-06-01"
+        },
+        {
+            "name": "AWS Certified Advanced Networking - Specialty",
+            "issueDate": "2024-03-01",
+            "expireDate": "2027-03-01"
+        },
+        {
+            "name": "AWS Certified: SAP on AWS - Specialty",
+            "issueDate": "2024-02-01",
+            "expireDate": "2027-02-01"
+        },
+        {
+            "name": "AWS Certified Data Analytics - Specialty",
+            "issueDate": "2023-11-01",
+            "expireDate": "2026-11-01"
+        },
+        {
+            "name": "AWS Certified DevOps Engineer - Professional",
+            "issueDate": "2023-10-01",
+            "expireDate": "2026-10-01"
+        },
+        {
+            "name": "AWS Certified Machine Learning - Specialty",
+            "issueDate": "2023-10-01",
+            "expireDate": "2026-10-01"
+        },
+        {
+            "name": "AWS Certified Solutions Architect - Professional",
+            "issueDate": "2023-10-01",
+            "expireDate": "2026-10-01"
+        },
+        {
+            "name": "AWS Certified Database - Specialty",
+            "issueDate": "2023-09-01",
+            "expireDate": "2026-09-01"
+        },
+        {
+            "name": "AWS Certified Security - Specialty",
+            "issueDate": "2023-06-01",
+            "expireDate": "2026-06-01"
+        },
+        {
+            "name": "AWS Certified Developer - Associate",
+            "issueDate": "2023-05-01",
+            "expireDate": "2026-05-01"
+        },
+        {
+            "name": "AWS Certified SysOps Administrator - Associate",
+            "issueDate": "2023-04-01",
+            "expireDate": "2026-04-01"
+        },
+        {
+            "name": "AWS Certified Cloud Practitioner",
+            "issueDate": "2023-02-01",
+            "expireDate": "2026-05-01"
+        },
+        {
+            "name": "AWS Certified Solutions Architect - Associate",
+            "issueDate": "2023-02-01",
+            "expireDate": "2026-02-01"
+        }
+    ],
+    "Microsoft": [
+        {
+            "name": "Microsoft Certified: Azure Data Fundamentals",
+            "issueDate": "2024-02-01"
+        },
+        {
+            "name": "Microsoft 365 Certified: Fundamentals",
+            "issueDate": "2023-11-01"
+        },
+        {
+            "name": "Microsoft Certified: Azure AI Fundamentals",
+            "issueDate": "2023-11-01"
+        },
+        {
+            "name": "Microsoft Certified: Cybersecurity Architect Expert",
+            "issueDate": "2023-11-01",
+            "expireDate": "2026-11-01"
+        },
+        {
+            "name": "Microsoft Certified: Power Platform Fundamentals",
+            "issueDate": "2023-11-01"
+        },
+        {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "issueDate": "2023-10-01"
+        },
+        {
+            "name": "Microsoft Certified: Azure Security Engineer Associate",
+            "issueDate": "2023-10-01",
+            "expireDate": "2026-10-01"
+        },
+        {
+            "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+            "issueDate": "2023-10-01"
+        },
+        {
+            "name": "Microsoft Certified: DevOps Engineer Expert",
+            "issueDate": "2023-09-01",
+            "expireDate": "2026-09-01"
+        },
+        {
+            "name": "Microsoft Certified: Azure Administrator Associate",
+            "issueDate": "2023-04-01",
+            "expireDate": "2026-04-01"
+        }
+    ],
+    "情報処理推進機構": [
+        {
+            "name": "応用情報技術者",
+            "issueDate": "2024-04-01"
+        },
+        {
+            "name": "情報セキュリティマネジメント",
+            "issueDate": "2023-09-01"
+        },
+        {
+            "name": "基本情報技術者",
+            "issueDate": "2023-04-01"
+        },
+        {
+            "name": "ITパスポート",
+            "issueDate": "2022-08-01"
+        }
+    ],
+    "その他": [
+        {
+            "name": "メンタルヘルス・マネジメント検定II種",
+            "issueDate": "2023-03-01",
+            "org": "大阪商工会議所"
+        },
+        {
+            "name": "JDLA Deep Learning for GENERAL 2023 #2",
+            "issueDate": "2023-05-01",
+            "org": "JDLA"
+        },
+        {
+            "name": "TOEIC L&R (Score: 820)",
+            "issueDate": "2024-08-01",
+            "org": "IIBC"
+        }
+    ]
+}
