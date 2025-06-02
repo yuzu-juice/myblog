@@ -1,0 +1,23 @@
+[
+    {
+        "institution": "放送大学",
+        "facultyCourse": "教養学部 教養学科 心理と教育コース",
+        "startDate": "2023-04-01",
+        "endDate": null,
+        "homepageUrl": "https://www.ouj.ac.jp/"
+    },
+    {
+        "institution": "42 Tokyo",
+        "facultyCourse": "Common Core",
+        "startDate": "2024-04-01",
+        "endDate": null,
+        "homepageUrl": "https://42tokyo.jp/"
+    },
+    {
+        "institution": "高知工業高等専門学校",
+        "facultyCourse": "ソーシャルデザイン工学科 情報セキュリティコース",
+        "startDate": "2017-04-01",
+        "endDate": "2022-03-31",
+        "homepageUrl": "https://www.kochi-ct.ac.jp/"
+    }
+]

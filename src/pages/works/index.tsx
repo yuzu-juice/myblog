@@ -12,9 +12,13 @@ const WorksPage: React.FC = () => {
                 <p className="text-lg text-muted-foreground mb-6">つくったもの</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div
+                className={`grid gap-8 ${projects.length === 1 ? 'grid-cols-1 justify-items-center' : 'grid-cols-1 lg:grid-cols-2'}`}
+            >
                 {projects.map((project) => (
-                    <ProjectCard key={project.id} project={project} />
+                    <div key={project.id} className={projects.length === 1 ? 'w-1/2' : 'w-full'}>
+                        <ProjectCard project={project} />
+                    </div>
                 ))}
             </div>
         </div>
