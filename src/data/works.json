@@ -1,9 +1,41 @@
 [
     {
-        "id": 1,
+        "nanoid": "x3p4vCkTZRHyKZJFNXWaQ",
         "title": "oinori-map",
-        "description": "Heart Poppoの機能の一つとして実装した祈りの可視化マップ。ユーザーの祈りを地球儀上に表示し、世界中の祈りを視覚的に表現する機能です。",
-        "link": "https://oqta.com",
-        "image": "/images/oinori.png"
+        "description": "OQTA Heart Poppo の機能の一つとして実装した祈りの可視化マップ。",
+        "image": "/images/VCCnPWQms6uEEqZ61FNKk.png",
+        "techStack": [
+            "Next.js",
+            "Three.js",
+            "TypeScript"
+        ],
+        "links": [
+            {
+                "name": "OQTA Heart Poppo",
+                "url": "https://oqta.com",
+                "icon": "ExternalLink"
+            },
+            {
+                "name": "oinori-map",
+                "url": "https://inoree.world",
+                "icon": "ExternalLink"
+            }
+        ]
+    },
+    {
+        "nanoid": "DJz6VvpwlZ6NkBxH4wGG1",
+        "title": "minishell",
+        "description": "Bashを模した簡易シェルの実装。C言語で書かれ、基本的なコマンドの実行やパイプ、リダイレクトなどの機能を持つ。",
+        "image": "/images/AypRK93qHtEmweGjPjpAY.png",
+        "techStack": [
+            "C"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/yuzu-juice/minishell",
+                "icon": "GitHub"
+            }
+        ]
     }
 ]

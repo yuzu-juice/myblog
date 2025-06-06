@@ -23,7 +23,7 @@ const HomePage = () => {
                     <CarouselContent className="-ml-2 sm:-ml-4">
                         {worksData.map((project) => (
                             <CarouselItem
-                                key={project.id}
+                                key={project.nanoid}
                                 className={`pl-2 sm:pl-4 ${worksData.length === 1 ? 'basis-full flex justify-center' : 'basis-full sm:basis-4/5 lg:basis-1/2'}`}
                             >
                                 <div className={worksData.length === 1 ? 'w-full sm:w-3/4 lg:w-1/2' : 'w-full'}>

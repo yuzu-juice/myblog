@@ -21,7 +21,7 @@ const Education = () => {
         <section className="bg-card rounded-sm p-8 shadow-md border border-border mb-12">
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-primary">
                 <GraduationCap className="w-6 h-6" />
-                Education
+                Educational background
             </h2>
             <div className="space-y-6">
                 {educationData.map((entry, index) => (

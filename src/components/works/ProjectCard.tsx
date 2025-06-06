@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
 import { ArrowRight } from 'lucide-react'
 
 interface Project {
-    id: number
+    nanoid: string
     title: string
     description: string
     image: string
-    link: string
 }
 
 interface ProjectCardProps {
@@ -26,18 +26,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </CardHeader>
 
             <CardContent>
-                <p className="text-muted-foreground leading-relaxed mb-6">{project.description}</p>
+                <p className="text-muted-foreground leading-relaxed mb-6 line-clamp-2">{project.description}</p>
             </CardContent>
 
             <CardFooter className="justify-end">
-                <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <Link
+                    to={`/works/${project.nanoid}`}
                     className="text-foreground hover:text-primary font-medium transition-colors duration-300 flex items-center gap-1"
                 >
                     View project <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
             </CardFooter>
         </Card>
     )

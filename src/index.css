@@ -56,7 +56,7 @@
   --secondary: #1A1A1A; /* Dark gray for secondary elements */
   --secondary-foreground: #AAAAAA; /* Medium gray text */
   --muted: #1A1A1A; /* Dark gray for muted elements */
-  --muted-foreground: #888888; /* Darker gray text */
+  --muted-foreground: #b7b7b7; /* Darker gray text */
   --accent: #FFFF00; /* Yellow for accents */
   --accent-foreground: #000000; /* Black text on yellow accents */
   --destructive: #FF4136; /* Bright red for destructive actions */
@@ -86,7 +86,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "Roboto Slab", "Sawarabi Mincho", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; /* Titillium Web for Latin, Kokoro for Japanese */
+    font-family: "Roboto Slab", "Kaisei Tokumin";
     line-height: 1.6;
   }
   a {
