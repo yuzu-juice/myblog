@@ -8,7 +8,6 @@ const Header = () => {
 
     const navigationItems = [
         { label: 'Home', href: '/' },
-        { label: 'Works', href: '/works' },
         { label: 'Posts', href: '/posts' },
         { label: 'About', href: '/about' }
     ]

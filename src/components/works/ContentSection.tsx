@@ -1,5 +1,5 @@
 import React from 'react'
-import MarkdownRenderer from '@/components/MarkdownRenderer'
+import MarkdownRenderer from '@/components/utils/MarkdownRenderer'
 import ProjectSidebar from './ProjectSidebar'
 
 interface ProjectLink {

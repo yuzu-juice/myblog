@@ -16,7 +16,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
-        <Card className="hover:transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 overflow-hidden">
+        <Card className="hover:transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 overflow-hidden w-80 max-w-full">
             <div className="relative h-48 bg-gray-100 overflow-hidden">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
             </div>
