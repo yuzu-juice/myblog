@@ -4,6 +4,12 @@ import HeroSection from '@/components/works/HeroSection'
 import ContentSection from '@/components/works/ContentSection'
 import worksData from '@/data/works.json'
 
+// すべてのMarkdownファイルを事前に読み込み
+const markdownModules = import.meta.glob('/src/data/worksDetails/*.md', {
+    as: 'raw',
+    eager: true
+})
+
 const WorkDetail: React.FC = () => {
     const { nanoid } = useParams<{ nanoid: string }>()
     const navigate = useNavigate()
@@ -14,22 +20,15 @@ const WorkDetail: React.FC = () => {
 
     useEffect(() => {
         if (project) {
-            // Markdownファイルをテキストとして読み込み
-            fetch(`/src/data/worksDetails/${project.nanoid}.md`)
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error('Markdown file not found')
-                    }
-                    return response.text()
-                })
-                .then((text) => {
-                    setMarkdownContent(text)
-                    setLoading(false)
-                })
-                .catch(() => {
-                    setMarkdownContent('詳細情報が見つかりませんでした。')
-                    setLoading(false)
-                })
+            const markdownPath = `/src/data/worksDetails/${project.nanoid}.md`
+            const content = markdownModules[markdownPath]
+
+            if (content) {
+                setMarkdownContent(content)
+            } else {
+                setMarkdownContent('詳細情報が見つかりませんでした。')
+            }
+            setLoading(false)
         }
     }, [project])
 
