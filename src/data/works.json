@@ -21,21 +21,5 @@
                 "icon": "ExternalLink"
             }
         ]
-    },
-    {
-        "nanoid": "DJz6VvpwlZ6NkBxH4wGG1",
-        "title": "minishell",
-        "description": "Bashを模した簡易シェルの実装。C言語で書かれ、基本的なコマンドの実行やパイプ、リダイレクトなどの機能を持つ。",
-        "image": "/images/AypRK93qHtEmweGjPjpAY.png",
-        "techStack": [
-            "C"
-        ],
-        "links": [
-            {
-                "name": "GitHub",
-                "url": "https://github.com/yuzu-juice/minishell",
-                "icon": "GitHub"
-            }
-        ]
     }
 ]
