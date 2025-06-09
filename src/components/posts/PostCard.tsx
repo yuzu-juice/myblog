@@ -17,20 +17,22 @@ interface PostCardProps {
 const PostCard = ({ post, onClick }: PostCardProps) => {
     return (
         <Card
-            className="group hover:shadow-lg transition-all duration-300 cursor-pointer"
+            className="group hover:shadow-lg transition-all duration-300 cursor-pointer min-h-[140px] sm:min-h-[120px] flex flex-col"
             onClick={onClick}
         >
-            <CardHeader className="pb-3">
+            <CardHeader className="pb-3 flex-1">
                 <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 min-w-0">
-                        <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
-                            {post.title}
+                        <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors h-auto min-h-[4rem] sm:min-h-[3.5rem] md:h-14 flex items-start">
+                            <span className="line-clamp-4 sm:line-clamp-3 md:line-clamp-2">
+                                {post.title}
+                            </span>
                         </CardTitle>
                     </div>
                     <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-300 flex-shrink-0 mt-1" />
                 </div>
             </CardHeader>
-            <CardContent className="pt-0">
+            <CardContent className="pt-0 flex-shrink-0">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         <div className="flex items-center gap-1">
