@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate, Navigate } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import MarkdownRenderer from '@/components/utils/MarkdownRenderer'
+import HeroSection from '@/components/posts/HeroSection'
+import ContentSection from '@/components/posts/ContentSection'
 import postsData from '@/data/posts.json'
 
 const markdownModules = import.meta.glob('/src/data/postsDetails/*.md', {
@@ -42,49 +41,13 @@ const PostDetail: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            {/* Header Section */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 py-16">
-                <div className="container mx-auto px-4">
-                    <Button
-                        variant="ghost"
-                        onClick={handleGoBack}
-                        className="mb-8 hover:bg-primary/10"
-                    >
-                        <ArrowLeft className="w-4 h-4 mr-2" />
-                        戻る
-                    </Button>
+            <HeroSection post={post} onGoBack={handleGoBack} />
 
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                        {post.title}
-                    </h1>
-
-                    <div className="flex items-center gap-4 text-muted-foreground">
-                        <span>{post.date}</span>
-                        <div className="flex gap-2">
-                            {post.tags.map((tag) => (
-                                <span key={tag} className="bg-primary/10 px-2 py-1 rounded text-sm">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Content Section */}
-            <div className="container mx-auto px-4 py-12">
-                <div className="max-w-4xl mx-auto">
-                    {loading ? (
-                        <div className="text-center py-8">
-                            <p>読み込み中...</p>
-                        </div>
-                    ) : (
-                        <MarkdownRenderer
-                            content={markdownContent}
-                            className="prose prose-lg max-w-none"
-                        />
-                    )}
-                </div>
+            <div className="container mx-auto px-4 py-6">
+                <ContentSection
+                    markdownContent={markdownContent}
+                    loading={loading}
+                />
             </div>
         </div>
     )

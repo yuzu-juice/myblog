@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ project, onGoBack }) => {
                 className="absolute top-8 left-8 flex items-center gap-2 text-white hover:text-primary transition-colors duration-300 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full"
             >
                 <ArrowLeft className="w-4 h-4" />
-                Back
+                戻る
             </button>
 
             {/* Project title overlay */}

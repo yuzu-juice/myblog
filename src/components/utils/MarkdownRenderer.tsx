@@ -42,6 +42,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className 
                             {children}
                         </a>
                     ),
+                    hr: () => <hr className="my-8 border-muted-foreground/20" />,
                 }}
             >
                 {content}

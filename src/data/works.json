@@ -3,7 +3,7 @@
         "nanoid": "x3p4vCkTZRHyKZJFNXWaQ",
         "title": "oinori-map",
         "description": "OQTA Heart Poppo の機能の一つとして実装した祈りの可視化マップ。",
-        "image": "/images/VCCnPWQms6uEEqZ61FNKk.png",
+        "image": "/images/works/VCCnPWQms6uEEqZ61FNKk.png",
         "techStack": [
             "Next.js",
             "Three.js",
