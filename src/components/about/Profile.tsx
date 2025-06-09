@@ -3,7 +3,7 @@ import profileData from '@/data/profile.json'
 
 const Profile = () => {
     return (
-        <div className="flex flex-col md:flex-row gap-8 m-16">
+        <div className="flex flex-col md:flex-row gap-8 m-10">
             {/* Profile Header */}
             <section className="text-center md:text-left md:w-2/3 flex flex-col justify-center">
                 <h1 className="text-4xl font-bold mb-2 text-primary">{profileData.name}</h1>

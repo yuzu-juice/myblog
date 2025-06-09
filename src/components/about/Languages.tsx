@@ -4,7 +4,7 @@ import languages from '@/data/languages.json'
 
 const Languages = () => {
     return (
-        <section className="bg-card rounded-sm p-8 shadow-md border border-border mb-12">
+        <section className="bg-card rounded-sm p-8 shadow-md border border-border mb-4">
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-primary">
                 <Code className="w-6 h-6" />
                 Main Languages
