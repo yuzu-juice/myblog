@@ -56,7 +56,6 @@ const PostDetail: React.FC = () => {
 
                     <div className="flex items-center gap-4 text-muted-foreground">
                         <span>{post.date}</span>
-                        <span>読了時間: {post.readTime}</span>
                         <div className="flex gap-2">
                             {post.tags.map((tag) => (
                                 <span key={tag} className="bg-primary/10 px-2 py-1 rounded text-sm">

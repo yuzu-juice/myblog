@@ -1,7 +1,14 @@
-import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import { Calendar, ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { type Post } from '@/types/posts'
+
+interface Post {
+    nanoid: string
+    title: string
+    description: string
+    date: string
+    tags: string[]
+}
 
 interface PostCardProps {
     post: Post
@@ -33,10 +40,6 @@ const PostCard = ({ post, onClick }: PostCardProps) => {
                         <div className="flex items-center gap-1">
                             <Calendar className="w-4 h-4" />
                             {post.date}
-                        </div>
-                        <div className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            {post.readTime}
                         </div>
                     </div>
                     <div className="flex gap-2 flex-wrap">

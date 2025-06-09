@@ -4,7 +4,6 @@
         "title": "React 18の新機能について",
         "description": "React 18で追加された新機能や変更点について詳しく解説します。Concurrent Rendering、Automatic Batching、Suspenseの改善点など。",
         "date": "2024-03-15",
-        "readTime": "5分",
         "tags": ["React", "JavaScript", "Frontend"]
     },
     {
@@ -12,7 +11,6 @@
         "title": "TypeScriptでの型安全な開発",
         "description": "TypeScriptを使った型安全な開発手法について。ジェネリクス、ユニオン型、型ガードなどの実践的な使い方を解説。",
         "date": "2024-03-10",
-        "readTime": "8分",
         "tags": ["TypeScript", "JavaScript"]
     },
     {
@@ -20,7 +18,6 @@
         "title": "Next.js App Routerの使い方",
         "description": "Next.js 13で導入されたApp Routerの基本的な使い方から応用まで。ファイルベースルーティングの新しい仕組みを詳しく説明。",
         "date": "2024-03-05",
-        "readTime": "12分",
         "tags": ["Next.js", "React", "SSR"]
     }
 ]
