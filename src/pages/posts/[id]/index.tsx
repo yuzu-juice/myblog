@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate, Navigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import MarkdownRenderer from '@/components/utils/MarkdownRenderer'
 import postsData from '@/data/posts.json'
 
-const markdownRegistry = import.meta.glob('/src/data/postsDetails/*.md', {
+const markdownModules = import.meta.glob('/src/data/postsDetails/*.md', {
     as: 'raw',
     eager: true
 })
@@ -19,11 +20,14 @@ const PostDetail: React.FC = () => {
 
     useEffect(() => {
         if (post) {
-            // レジストリから対応するMarkdownを取得
             const markdownPath = `/src/data/postsDetails/${post.nanoid}.md`
-            const content = markdownRegistry[markdownPath]
+            const content = markdownModules[markdownPath]
 
-            setMarkdownContent(content || '記事の詳細が見つかりませんでした。')
+            if (content) {
+                setMarkdownContent(content)
+            } else {
+                setMarkdownContent('記事の詳細が見つかりませんでした。')
+            }
             setLoading(false)
         }
     }, [post])
@@ -75,9 +79,10 @@ const PostDetail: React.FC = () => {
                             <p>読み込み中...</p>
                         </div>
                     ) : (
-                        <div className="prose prose-lg max-w-none">
-                            <pre className="whitespace-pre-wrap">{markdownContent}</pre>
-                        </div>
+                        <MarkdownRenderer
+                            content={markdownContent}
+                            className="prose prose-lg max-w-none"
+                        />
                     )}
                 </div>
             </div>
