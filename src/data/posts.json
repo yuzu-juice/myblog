@@ -2,14 +2,12 @@
     {
         "nanoid": "AlP4rHINMxSHSp1n2SwEg",
         "title": "PowerShellからInvoke-WebRequestでクライアント認証が必要なWebサイトへアクセスする(pfx証明書)",
-        "description": "PowerShellを使って、クライアント認証が必要なWebサイトにアクセスする方法を解説します。pfx証明書を使用して認証を行います。",
         "date": "2023-04-09",
         "tags": ["PowerShell", "クライアント認証", "pfx証明書"]
     },
     {
         "nanoid": "vAcaMz9QLrdz7wfXlzfZT",
         "title": "AWSのゲートウェイ、インターフェイス、エンドポイントまとめ",
-        "description": "ANS-C01資格の学習のために、AWSのゲートウェイ、インターフェイス、エンドポイントについてまとめました。",
         "date": "2023-09-01",
         "tags": ["AWS", "ANS-C01", "Gateway", "Interface", "Endpoint", "Networking"]
     }

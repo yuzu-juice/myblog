@@ -13,9 +13,9 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className 
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-                    h1: ({children}) => <h1 className="text-3xl font-bold mb-6 text-foreground">{children}</h1>,
-                    h2: ({children}) => <h2 className="text-2xl font-semibold mb-4 mt-8 text-foreground">{children}</h2>,
-                    h3: ({children}) => <h3 className="text-xl font-medium mb-3 mt-6 text-foreground">{children}</h3>,
+                    h1: ({children}) => <h1 className="text-2xl font-bold mb-6 text-foreground">{children}</h1>,
+                    h2: ({children}) => <h2 className="text-xl font-semibold mb-4 mt-8 text-foreground">{children}</h2>,
+                    h3: ({children}) => <h3 className="text-lg font-medium mb-3 mt-6 text-foreground">{children}</h3>,
                     p: ({children}) => <p className="mb-4 text-muted-foreground leading-relaxed">{children}</p>,
                     code: ({ children, className }) => {
                         const isInline = !className

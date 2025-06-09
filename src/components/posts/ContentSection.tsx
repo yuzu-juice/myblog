@@ -8,7 +8,7 @@ interface ContentSectionProps {
 
 const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loading }) => {
     return (
-        <div className="max-w-4xl mx-auto">
+        <div>
             {loading ? (
                 <div className="text-center py-8">
                     <p>読み込み中...</p>
@@ -16,7 +16,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loadin
             ) : (
                 <MarkdownRenderer
                     content={markdownContent}
-                    className="prose prose-lg max-w-none"
+                    className="prose prose-sm sm:prose-lg max-w-none"
                 />
             )}
         </div>

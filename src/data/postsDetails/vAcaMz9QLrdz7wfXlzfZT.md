@@ -20,26 +20,31 @@ ANS-C01を勉強しているのですが、すごくむずかしいです。
 ## 1.1. Internet Gateway(インターネットゲートウェイ)
 
 **VPC⇔インターネット**
+
 VPCとインターネットで接続するために使う。
 
 ## 1.2. NAT Gateway
 
 **VPC⇒インターネット**
+
 パブリックIPを持っていないインスタンスが、IPをNAT変換するために使う。
 
 ## 1.3. Egress-only Internet Gateway
 
 **VPC⇒インターネット**
+
 NAT GatewayはIPv4をNATするが、Egress-onlyはIPv6をNATする。
 
 ## 1.4. Virtual Private Gateway(仮想プライベートゲートウェイ)
 
 **VPC⇔ユーザ拠点**
+
 VPNやDirect Connectを利用して、ユーザ拠点とVPCをつなぐ際のVPC側の出入口。
 
 ## 1.5. Transit Gateway
 
 **VPC⇔VPC⇔ユーザ拠点**
+
 複数のVPCや、VPCとユーザ拠点を接続するときに使う。
 
 ---
@@ -54,6 +59,7 @@ VPCエンドポイントにはインターフェイス型とゲートウェイ�
 プライベートIPアドレスでAWSのサービスに接続できるようになる。
 ENIがプライベートIPアドレスを持っていて、そこにアクセスする感じ。
 お金がかかる。
+
 ![image.png](/images/posts/vAcaMz9QLrdz7wfXlzfZT/bilGKGEaM5PkbKLIfFoFF.png)
 
 ## 2.2.ゲートウェイ型
@@ -62,6 +68,7 @@ ENIがプライベートIPアドレスを持っていて、そこにアクセス
 VPCのルートテーブルが書き換えられることで、インターネットに出ないでサービスに接続できるようになる。
 VPC内のリソースから、S3とDynamoDBに接続するときにだけ使える。
 無料。
+
 ![image.png](/images/posts/vAcaMz9QLrdz7wfXlzfZT/8DDcNAz3OgqNlq8j8Litw.png)
 
 ---
@@ -93,4 +100,4 @@ Amazon Site-to-Site VPNサービスを利用することで、IPsec VPNを張る
 # 4. まとめ
 
 めちゃくちゃ種類が多いのかなと思っていましたが、あらためて整理してみるとそうでもないかも？
-この記事を書いたおかげで少し理解が深まりました。引き続き、ANS-C01の勉強を頑張っていきます。
+この記事を書いたおかげで少し理解が深まりました。
