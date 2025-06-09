@@ -4,6 +4,11 @@ import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import postsData from '@/data/posts.json'
 
+const markdownRegistry = import.meta.glob('/src/data/postsDetails/*.md', {
+    as: 'raw',
+    eager: true
+})
+
 const PostDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>()
     const navigate = useNavigate()
@@ -13,19 +18,14 @@ const PostDetail: React.FC = () => {
     const post = postsData.find((post) => post.nanoid === id)
 
     useEffect(() => {
-        const loadMarkdown = async () => {
-            if (post) {
-                try {
-                    const module = await import(`/src/data/postsDetails/${post.nanoid}.md?raw`)
-                    setMarkdownContent(module.default)
-                } catch (error) {
-                    setMarkdownContent('記事の詳細が見つかりませんでした。')
-                }
-                setLoading(false)
-            }
-        }
+        if (post) {
+            // レジストリから対応するMarkdownを取得
+            const markdownPath = `/src/data/postsDetails/${post.nanoid}.md`
+            const content = markdownRegistry[markdownPath]
 
-        loadMarkdown()
+            setMarkdownContent(content || '記事の詳細が見つかりませんでした。')
+            setLoading(false)
+        }
     }, [post])
 
     const handleGoBack = () => {
