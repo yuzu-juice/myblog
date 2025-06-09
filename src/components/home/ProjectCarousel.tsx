@@ -24,7 +24,7 @@ interface ProjectCarouselProps {
 const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
     projects,
     showControls = true,
-    className = "mx-4 sm:mx-8 lg:mx-16"
+    className = "mx-4 sm:mx-8 lg:mx-16 mb-8"
 }) => {
     return (
         <section className={className}>
