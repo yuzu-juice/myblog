@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin } from 'lucide-react'
+import { Github, Twitter, Linkedin, Youtube } from 'lucide-react'
 import profileData from '@/data/profile.json'
 
 const Profile = () => {
@@ -32,6 +32,14 @@ const Profile = () => {
                         className="text-foreground hover:text-primary"
                     >
                         <Linkedin className="w-7 h-7" />
+                    </a>
+                    <a
+                        href={profileData.social.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground hover:text-primary"
+                    >
+                        <Youtube className="w-7 h-7" />
                     </a>
                 </div>
             </section>
