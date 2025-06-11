@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkBreaks from 'remark-breaks'
 
 interface MarkdownRendererProps {
     content: string
@@ -11,12 +12,13 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className 
     return (
         <div className={className}>
             <ReactMarkdown
-                remarkPlugins={[remarkGfm]}
+                remarkPlugins={[remarkGfm, remarkBreaks]}
                 components={{
                     h1: ({children}) => <h1 className="text-2xl font-bold mb-6 text-foreground">{children}</h1>,
                     h2: ({children}) => <h2 className="text-xl font-semibold mb-4 mt-8 text-foreground">{children}</h2>,
                     h3: ({children}) => <h3 className="text-lg font-medium mb-3 mt-6 text-foreground">{children}</h3>,
                     p: ({children}) => <p className="mb-4 text-muted-foreground leading-relaxed">{children}</p>,
+                    br: () => <br />,
                     code: ({ children, className }) => {
                         const isInline = !className
                         return isInline ? (
