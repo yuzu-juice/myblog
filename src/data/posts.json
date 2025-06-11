@@ -10,5 +10,11 @@
         "title": "AWSのゲートウェイ、インターフェイス、エンドポイントまとめ",
         "date": "2023-09-01",
         "tags": ["AWS", "ANS-C01", "Gateway", "Interface", "Endpoint", "Networking"]
+    },
+    {
+        "nanoid": "oXUH4uKNgwlEAqDa0k3wX",
+        "title": "ångstromCTF 2023 writeup",
+        "date": "2023-04-28",
+        "tags": ["CTF", "ångstromCTF", "writeup"]
     }
 ]
