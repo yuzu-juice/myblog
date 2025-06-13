@@ -309,7 +309,13 @@ if (iVar1 != 0) {
     exit(1);
 ```
 
-xor_をのぞいてみると、単純に引数と"anextremelycomplicatedkeythatisdefinitelyuselessss"を一文字ずつxorをとっているだけのようだ。
+xor_をのぞいてみると、単純に引数と
+
+```text
+anextremelycomplicatedkeythatisdefinitelyuselessss
+```
+
+を一文字ずつxorをとっているだけのようだ。
 
 ```C
 void xor_(long param_1)
@@ -331,8 +337,19 @@ void xor_(long param_1)
 }
 ```
 
-得たい出力は"2& =$!-( <*+*( ?!&$$6,. )\' $19 , #9=!1 <*=6 <6;66#"なので、
-これと"anextremelycomplicatedkeythatisdefinitelyuselessss"のxorをとる。
+得たい出力は
+
+```text
+2& =$!-( <*+*( ?!&$$6,. )\' $19 , #9=!1 <*=6 <6;66#
+```
+
+なので、これと
+
+```text
+anextremelycomplicatedkeythatisdefinitelyuselessss
+```
+
+のxorをとる。
 
 ```python
 s1 = "anextremelycomplicatedkeythatisdefinitelyuselessss"
