@@ -148,11 +148,15 @@ curl https://pioneer.tailec718.ts.net -H "host:flag.local"
 
 ### ranch
 
-`rtkw{cf0bj_czbv_nv'cc_y4mv_kf_kip_re0kyvi_uivjj1ex_5vw89s3r44901831}`
+```
+rtkw{cf0bj_czbv_nv'cc_y4mv_kf_kip_re0kyvi_uivjj1ex_5vw89s3r44901831}
+```
 
 シーザー暗号。 rot9してflagをゲット。
 
-`actf{lo0ks_like_we'll_h4ve_to_try_an0ther_dress1ng_5ef89b3a44901831}`
+```
+actf{lo0ks_like_we'll_h4ve_to_try_an0ther_dress1ng_5ef89b3a44901831}
+```
 
 ### impossible
 
@@ -363,5 +367,11 @@ What did you learn in class today? %p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%
 Oh nice, 0x7ffefaff7040(nil)0x7f5eb434fa370x90x559beaca14900x3e8000000000x559beaca02a00x70257025702570250x70257025702570250x70257025702570250x70257025702570250x70257025702570250x257025702570250x3474737b667463610x75715f74695f6b630x615f74695f6575650x34373964613931360x7d32326234363863(nil)(nil)(nil)(nil)(nil)sounds pretty cool!
 ```
 
-出てきた16進数を文字列に戻すと、"4ts{ftcauq_ti_kca_ti_eue479da916}22b468c"が得られる。
+出てきた16進数を文字列に戻すと、
+
+```
+4ts{ftcauq_ti_kca_ti_eue479da916}22b468c
+```
+
+が得られる。
 これを先頭から8文字ずつ取って、逆順にするとflagが得られる。
