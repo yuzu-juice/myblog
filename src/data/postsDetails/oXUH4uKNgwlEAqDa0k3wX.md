@@ -148,13 +148,13 @@ curl https://pioneer.tailec718.ts.net -H "host:flag.local"
 
 ### ranch
 
-```
+```text
 rtkw{cf0bj_czbv_nv'cc_y4mv_kf_kip_re0kyvi_uivjj1ex_5vw89s3r44901831}
 ```
 
 シーザー暗号。 rot9してflagをゲット。
 
-```
+```text
 actf{lo0ks_like_we'll_h4ve_to_try_an0ther_dress1ng_5ef89b3a44901831}
 ```
 
@@ -341,11 +341,15 @@ for i, j in zip(s1, s2):
     print(chr(ord(i)^ord(j)), end='')
 ```
 
-"SHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEP"という文字列が得られる。
+```text
+SHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEPSHEEP
+```
+
+という文字列が得られる。
 
 回答は以下。0x1337は10進数で4919。
 
-```
+```text
 $ nc challs.actf.co 32760
 I'm going to sleep. Count me some sheep: 4919
 Nice, now reset it. Bet you can't: 1
@@ -369,7 +373,7 @@ Oh nice, 0x7ffefaff7040(nil)0x7f5eb434fa370x90x559beaca14900x3e8000000000x559bea
 
 出てきた16進数を文字列に戻すと、
 
-```
+```text
 4ts{ftcauq_ti_kca_ti_eue479da916}22b468c
 ```
 
