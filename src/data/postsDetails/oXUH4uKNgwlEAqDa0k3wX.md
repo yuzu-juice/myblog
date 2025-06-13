@@ -267,6 +267,7 @@ zaza: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linke
 ![image.png](/images/posts/oXUH4uKNgwlEAqDa0k3wX/WmLz7QcjnweZe5Ovfnyv4.png)
 
 そのために、3つのif文をクリアする必要がある。
+
 まず一つ目
 
 scanfで読み取った値が0x1337であればexit()されずに次に進める。
@@ -295,7 +296,13 @@ if (local_5c * local_60 == 1) {
 
 三つ目
 fgets()で受け取った文字列がxor_()に通される。
-xor_()を通した後、"2& =$!-( <*+*( ?!&$$6,. )\' $19 , #9=!1 <*=6 <6;66#"と比較され、一致すればflagが表示される。
+xor_()を通した後、
+
+```text
+2& =$!-( <*+*( ?!&$$6,. )\' $19 , #9=!1 <*=6 <6;66#
+```
+
+と比較され、一致すればflagが表示される。
 
 ```C
 fgets(local_58,0x40,stdin);
@@ -315,7 +322,7 @@ xor_をのぞいてみると、単純に引数と
 anextremelycomplicatedkeythatisdefinitelyuselessss
 ```
 
-を一文字ずつxorをとっているだけのようだ。
+で一文字ずつxorをとっているだけのようだ。
 
 ```C
 void xor_(long param_1)
