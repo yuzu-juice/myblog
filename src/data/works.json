@@ -3,7 +3,7 @@
         "nanoid": "x3p4vCkTZRHyKZJFNXWaQ",
         "title": "oinori-map",
         "description": "OQTA Heart Poppo の機能の一つとして実装した祈りの可視化マップ。",
-        "image": "/images/works/VCCnPWQms6uEEqZ61FNKk.png",
+        "image": "/images/works/x3p4vCkTZRHyKZJFNXWaQ.png",
         "techStack": [
             "Next.js",
             "Three.js",
@@ -18,6 +18,24 @@
             {
                 "name": "oinori-map",
                 "url": "https://inoree.world",
+                "icon": "ExternalLink"
+            }
+        ]
+    },
+    {
+        "nanoid": "SkwYvgomCbuRTF790XQte",
+        "title": "Super Unique ID Generator",
+        "description": "ユニークなIDを生成するためのツール。",
+        "image": "/images/works/SkwYvgomCbuRTF790XQte.png",
+        "techStack": [
+            "Next.js",
+            "TypeScript",
+            "bun"
+        ],
+        "links": [
+            {
+                "name": "Super Unique ID Generator",
+                "url": "https://id-gen.yuzu-juice.dev",
                 "icon": "ExternalLink"
             }
         ]
