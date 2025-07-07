@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExternalLink, Github, FileText, Link } from 'lucide-react'
+import { ExternalLink, Github, Chrome, FileText, Link } from 'lucide-react'
 
 interface ProjectLink {
     name: string
@@ -21,6 +21,7 @@ const ProjectSidebar: React.FC<ProjectSidebarProps> = ({
         const iconMap = {
             ExternalLink: ExternalLink,
             GitHub: Github,
+            Chrome: Chrome,
             FileText: FileText,
             Link: Link
         }
