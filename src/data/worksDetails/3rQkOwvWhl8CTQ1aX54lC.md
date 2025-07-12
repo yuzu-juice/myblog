@@ -1,4 +1,4 @@
-## X_Youtube_Blocker とは？
+## X Youtube Blocker とは？
 
 XおよびYouTubeをブロックするChrome拡張機能です。
 健康になるために、XやYouTubeを見ないようにしよう！
