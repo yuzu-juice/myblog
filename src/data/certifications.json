@@ -1,6 +1,11 @@
 {
     "Google": [
         {
+            "name": "Generative AI Leader",
+            "issueDate": "2025-05-01",
+            "expireDate": "2028-05-01"
+        },
+        {
             "name": "Professional Machine Learning Engineer",
             "issueDate": "2025-05-01",
             "expireDate": "2027-05-01"
