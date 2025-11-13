@@ -6,7 +6,8 @@ import worksData from '@/data/works.json'
 
 // すべてのMarkdownファイルを事前に読み込み
 const markdownModules = import.meta.glob('/src/data/worksDetails/*.md', {
-    as: 'raw',
+    query: '?raw',
+    import: 'default',
     eager: true
 })
 
