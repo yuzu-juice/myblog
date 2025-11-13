@@ -44,10 +44,7 @@ const PostDetail: React.FC = () => {
             <HeroSection post={post} onGoBack={handleGoBack} />
 
             <div className="container mx-auto px-4 py-6">
-                <ContentSection
-                    markdownContent={markdownContent}
-                    loading={loading}
-                />
+                <ContentSection markdownContent={markdownContent} loading={loading} />
             </div>
         </div>
     )

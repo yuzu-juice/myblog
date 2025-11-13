@@ -14,10 +14,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loadin
                     <p>読み込み中...</p>
                 </div>
             ) : (
-                <MarkdownRenderer
-                    content={markdownContent}
-                    className="prose prose-sm sm:prose-lg max-w-none"
-                />
+                <MarkdownRenderer content={markdownContent} className="prose prose-sm sm:prose-lg max-w-none" />
             )}
         </div>
     )

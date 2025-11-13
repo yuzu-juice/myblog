@@ -12,10 +12,7 @@ interface ProjectSidebarProps {
     links: ProjectLink[]
 }
 
-const ProjectSidebar: React.FC<ProjectSidebarProps> = ({
-    techStack,
-    links
-}) => {
+const ProjectSidebar: React.FC<ProjectSidebarProps> = ({ techStack, links }) => {
     // アイコンのマッピング
     const getIcon = (iconName: string) => {
         const iconMap = {

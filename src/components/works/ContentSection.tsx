@@ -15,12 +15,7 @@ interface ContentSectionProps {
     links: ProjectLink[]
 }
 
-const ContentSection: React.FC<ContentSectionProps> = ({
-    markdownContent,
-    loading,
-    techStack,
-    links
-}) => {
+const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loading, techStack, links }) => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main Article */}
@@ -38,10 +33,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-                <ProjectSidebar
-                    techStack={techStack}
-                    links={links}
-                />
+                <ProjectSidebar techStack={techStack} links={links} />
             </div>
         </div>
     )

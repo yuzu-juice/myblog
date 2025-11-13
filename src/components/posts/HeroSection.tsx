@@ -27,9 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ post, onGoBack }) => {
                 </button>
 
                 <div className="pt-10">
-                    <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">
-                        {post.title}
-                    </h1>
+                    <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">{post.title}</h1>
 
                     <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-muted-foreground">
                         <span>{post.date}</span>

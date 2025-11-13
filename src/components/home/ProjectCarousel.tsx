@@ -24,19 +24,14 @@ interface ProjectCarouselProps {
 const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
     projects,
     showControls = true,
-    className = "mx-4 sm:mx-8 lg:mx-16 mb-8"
+    className = 'mx-4 sm:mx-8 lg:mx-16 mb-8'
 }) => {
     return (
         <section className={className}>
-            <Carousel
-                className="w-full"
-            >
+            <Carousel className="w-full">
                 <CarouselContent className="-ml-2 sm:-ml-4">
                     {projects.map((project) => (
-                        <CarouselItem
-                            key={project.nanoid}
-                            className="pl-2 sm:pl-4 basis-auto flex justify-center"
-                        >
+                        <CarouselItem key={project.nanoid} className="pl-2 sm:pl-4 basis-auto flex justify-center">
                             <ProjectCard project={project} />
                         </CarouselItem>
                     ))}

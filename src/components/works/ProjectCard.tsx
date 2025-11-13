@@ -22,7 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </div>
 
             <CardHeader>
-                <CardTitle className="text-2xl text-foreground min-h-[4rem] flex items-start">{project.title}</CardTitle>
+                <CardTitle className="text-2xl text-foreground min-h-[4rem] flex items-start">
+                    {project.title}
+                </CardTitle>
             </CardHeader>
 
             <CardContent>
