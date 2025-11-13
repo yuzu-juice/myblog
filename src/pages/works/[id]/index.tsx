@@ -22,7 +22,7 @@ const WorkDetail: React.FC = () => {
     useEffect(() => {
         if (project) {
             const markdownPath = `/src/data/worksDetails/${project.nanoid}.md`
-            const content = markdownModules[markdownPath]
+            const content = markdownModules[markdownPath] as string
 
             if (content) {
                 setMarkdownContent(content)
