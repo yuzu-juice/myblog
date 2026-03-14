@@ -1,6 +1,6 @@
 import { formatDate } from '@/lib/utils/formatDate'
 import { GraduationCap } from 'lucide-react'
-import educationData from '@/data/education.json'
+import educationData from '@/data/educations.json'
 
 interface EducationEntry {
     institution: string

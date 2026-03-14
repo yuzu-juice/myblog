@@ -16,7 +16,12 @@ interface PostCardProps {
 
 const PostCard = ({ post, url }: PostCardProps) => {
     return (
-        <a href={url} target="_blank" rel="noopener noreferrer" className="block">
+        <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:no-underline text-inherit hover:text-inherit"
+        >
             <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer min-h-[140px] sm:min-h-[120px] flex flex-col">
                 <CardHeader className="pb-3 flex-1">
                     <div className="flex items-start justify-between gap-4">
