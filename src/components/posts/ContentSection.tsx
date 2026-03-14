@@ -1,5 +1,6 @@
 import React from 'react'
 import MarkdownRenderer from '@/components/utils/MarkdownRenderer'
+import { Spinner } from '@/components/ui/spinner'
 
 interface ContentSectionProps {
     markdownContent: string
@@ -10,8 +11,8 @@ const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loadin
     return (
         <div>
             {loading ? (
-                <div className="text-center py-8">
-                    <p>読み込み中...</p>
+                <div className="flex justify-center py-8">
+                    <Spinner className="size-8" />
                 </div>
             ) : (
                 <MarkdownRenderer content={markdownContent} className="prose prose-sm sm:prose-lg max-w-none" />

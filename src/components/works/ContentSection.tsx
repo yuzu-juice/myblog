@@ -1,6 +1,7 @@
 import React from 'react'
 import MarkdownRenderer from '@/components/utils/MarkdownRenderer'
 import ProjectSidebar from './ProjectSidebar'
+import { Spinner } from '@/components/ui/spinner'
 
 interface ProjectLink {
     name: string
@@ -23,7 +24,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({ markdownContent, loadin
                 <div className="prose prose-invert prose-lg max-w-none">
                     {loading ? (
                         <div className="flex items-center justify-center h-32">
-                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                            <Spinner className="size-8" />
                         </div>
                     ) : (
                         <MarkdownRenderer content={markdownContent} />

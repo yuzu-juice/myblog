@@ -5,10 +5,11 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "tsc -b && vite build",
+        "build": "npx tsx scripts/fetch-qiita.ts && tsc -b && vite build",
         "lint": "eslint .",
         "prettier": "prettier --write \"**/*.{ts,tsx}\"",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "fetch:qiita": "npx tsx scripts/fetch-qiita.ts"
     },
     "dependencies": {
         "@radix-ui/react-accordion": "^1.2.11",
@@ -41,6 +42,7 @@
         "eslint-plugin-react-refresh": "^0.4.16",
         "globals": "^15.14.0",
         "prettier": "^3.5.0",
+        "tsx": "^4.21.0",
         "tw-animate-css": "^1.3.0",
         "typescript": "~5.6.2",
         "typescript-eslint": "^8.18.2",
