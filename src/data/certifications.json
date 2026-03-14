@@ -1,6 +1,11 @@
 {
     "Google": [
         {
+            "name": "Professional Security Operations Engineer",
+            "issueDate": "2025-09-01",
+            "expireDate": "2027-09-01"
+        },
+        {
             "name": "Generative AI Leader",
             "issueDate": "2025-05-01",
             "expireDate": "2028-05-01"
@@ -186,12 +191,12 @@
         {
             "name": "Microsoft Certified: DevOps Engineer Expert",
             "issueDate": "2023-09-01",
-            "expireDate": "2026-09-01"
+            "expireDate": "2027-09-01"
         },
         {
             "name": "Microsoft Certified: Azure Administrator Associate",
             "issueDate": "2023-04-01",
-            "expireDate": "2026-04-01"
+            "expireDate": "2027-04-01"
         }
     ],
     "情報処理推進機構": [
