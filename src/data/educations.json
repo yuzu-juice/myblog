@@ -1,5 +1,12 @@
 [
     {
+        "institution": "中央大学",
+        "facultyCourse": "法学部 通信教育課程",
+        "startDate": "2026-04-01",
+        "endDate": null,
+        "homepageUrl": "https://www.tsukyo.chuo-u.ac.jp/"
+    },
+    {
         "institution": "放送大学",
         "facultyCourse": "教養学部 教養学科 心理と教育コース",
         "startDate": "2023-04-01",
