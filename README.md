@@ -2,7 +2,7 @@
 
 https://yuzu-juice.dev
 
-This is a personal blog and portfolio website built with modern web technologies. It showcases my projects, blog posts, and professional background.
+This is a single-page personal site built with modern web technologies. It introduces who I am, my skills, certifications, and educational background.
 
 ## Tech Stack
 

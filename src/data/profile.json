@@ -1,15 +1,16 @@
 {
     "name": "Taichi Kitagawa",
-    "title": "Software Engineer?",
     "bio": {
-        "ja": "ゆずジュースが好きなエンジニア。アジャイルやSRE、DevOps、セキュリティに興味があります。",
-        "en": "I'm an engineer who loves yuzu juice and is interested in Agile, SRE, DevOps, and security."
+        "ja": "ゆずジュースが好きなエンジニア。アジャイルやSRE、DevOps、セキュリティに興味があります。"
     },
     "website": "yuzu-juice.dev",
     "social": {
         "github": "https://github.com/yuzu-juice",
         "twitter": "https://x.com/yuzu_juice_sec",
         "linkedin": "https://www.linkedin.com/in/taichi-kitagawa-777664278/",
+        "note": "https://note.com/yuzu_juice",
+        "noteAntiSdgs": "https://note.com/anti_sdgs_",
+        "qiita": "https://qiita.com/yuzu_juice",
         "youtube": "https://www.youtube.com/@転生したらコンパイラだった件-w6n"
     }
 }

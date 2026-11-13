@@ -26,21 +26,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  /* Chart colors can be updated or removed if not used with the new theme */
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  /* Sidebar colors - themed for dark mode */
-  --color-sidebar: var(--card); /* Using card color for sidebar */
-  --color-sidebar-foreground: var(--card-foreground);
-  --color-sidebar-primary: var(--primary);
-  --color-sidebar-primary-foreground: var(--primary-foreground);
-  --color-sidebar-accent: var(--accent);
-  --color-sidebar-accent-foreground: var(--accent-foreground);
-  --color-sidebar-border: var(--border);
-  --color-sidebar-ring: var(--ring);
 }
 
 :root {
@@ -63,21 +48,6 @@
   --border: #333333; /* Dark gray for borders */
   --input: #1A1A1A; /* Dark gray for input backgrounds */
   --ring: #FFFF00; /* Yellow for focus rings */
-
-  /* Chart colors - can be shades of yellow, gray, or other hacker-theme appropriate colors */
-  --chart-1: #FFFF00;
-  --chart-2: #F0E68C;
-  --chart-3: #BDB76B;
-  --chart-4: #808000;
-  --chart-5: #556B2F;
-  --sidebar: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-  --sidebar-primary: hsl(240 5.9% 10%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 
 @layer base {
@@ -95,15 +65,4 @@
   h1, h2, h3, h4, h5, h6 {
     @apply text-primary;
   }
-}
-
-.dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }

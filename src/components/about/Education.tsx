@@ -1,32 +1,36 @@
 import { formatDate } from '@/lib/utils/formatDate'
 import { GraduationCap } from 'lucide-react'
+import Section from './Section'
 import educationData from '@/data/educations.json'
+
+interface EducationPhase {
+    name: string
+    startDate: string
+    endDate: string | null
+}
 
 interface EducationEntry {
     institution: string
-    facultyCourse: string
+    facultyCourse?: string
     startDate: string
     endDate: string | null
     homepageUrl: string
+    phases?: EducationPhase[]
+}
+
+const generatePeriod = (startDate: string, endDate: string | null) => {
+    const startFormatted = formatDate(new Date(startDate))
+    const endFormatted = endDate ? formatDate(new Date(endDate)) : '現在'
+    return `${startFormatted} - ${endFormatted}`
 }
 
 const Education = () => {
-    const generatePeriod = (entry: EducationEntry) => {
-        const startFormatted = formatDate(new Date(entry.startDate))
-        const endFormatted = entry.endDate ? formatDate(new Date(entry.endDate)) : '現在'
-        return `${startFormatted} - ${endFormatted}`
-    }
-
     return (
-        <section className="bg-card rounded-sm p-8 shadow-md border border-border mb-4">
-            <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-primary">
-                <GraduationCap className="w-6 h-6" />
-                Educational background
-            </h2>
+        <Section icon={GraduationCap} title="Educational background">
             <div className="space-y-6">
-                {educationData.map((entry, index) => (
-                    <div key={index} className="border-l-4 border-primary pl-4">
-                        <h3 className="text-xl font-semibold text-foreground">
+                {educationData.map((entry: EducationEntry) => (
+                    <div key={entry.institution} className="border-l-2 border-primary/60 pl-4">
+                        <h3 className="text-xl text-foreground">
                             {entry.homepageUrl ? (
                                 <a
                                     href={entry.homepageUrl}
@@ -40,12 +44,30 @@ const Education = () => {
                                 entry.institution
                             )}
                         </h3>
-                        <p className="text-md text-muted-foreground">{entry.facultyCourse}</p>
-                        <p className="text-sm text-muted-foreground/80 mb-1">{generatePeriod(entry)}</p>
+
+                        {entry.phases ? (
+                            <ul className="mt-2 space-y-1 border-l border-border/60 pl-4">
+                                {entry.phases.map((phase) => (
+                                    <li key={phase.name} className="text-base font-normal text-muted-foreground">
+                                        <span>{phase.name}</span>
+                                        <span className="ml-2 text-sm text-muted-foreground/80">
+                                            {generatePeriod(phase.startDate, phase.endDate)}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <>
+                                <p className="text-base text-muted-foreground">{entry.facultyCourse}</p>
+                                <p className="text-sm text-muted-foreground/80 mb-1">
+                                    {generatePeriod(entry.startDate, entry.endDate)}
+                                </p>
+                            </>
+                        )}
                     </div>
                 ))}
             </div>
-        </section>
+        </Section>
     )
 }
 

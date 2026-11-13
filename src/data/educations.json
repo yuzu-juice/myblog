@@ -1,5 +1,12 @@
 [
     {
+        "institution": "文化服装学院",
+        "facultyCourse": "通信教育講座 服装コース",
+        "startDate": "2026-11-01",
+        "endDate": null,
+        "homepageUrl": "https://lifelong.bunka-fc.ac.jp/"
+    },
+    {
         "institution": "中央大学",
         "facultyCourse": "法学部 通信教育課程",
         "startDate": "2026-04-01",
@@ -15,10 +22,21 @@
     },
     {
         "institution": "42 Tokyo",
-        "facultyCourse": "Common Core",
         "startDate": "2024-04-01",
         "endDate": null,
-        "homepageUrl": "https://42tokyo.jp/"
+        "homepageUrl": "https://42tokyo.jp/",
+        "phases": [
+            {
+                "name": "Common Core",
+                "startDate": "2024-04-01",
+                "endDate": "2026-10-06"
+            },
+            {
+                "name": "Advanced Core",
+                "startDate": "2026-10-06",
+                "endDate": null
+            }
+        ]
     },
     {
         "institution": "高知工業高等専門学校",

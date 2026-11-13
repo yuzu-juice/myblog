@@ -1,29 +1,37 @@
+import { SquareTerminal } from 'lucide-react'
 import Profile from '@/components/about/Profile'
-import ProjectCarousel from '@/components/home/ProjectCarousel'
-import worksData from '@/data/works.json'
+import Location from '@/components/about/Location'
+import Languages from '@/components/about/Languages'
+import Links from '@/components/about/Links'
+import Certifications from '@/components/about/Certifications'
+import Education from '@/components/about/Education'
+import Section from '@/components/about/Section'
+import Activities from '@/components/about/Activities'
+import { Badge } from '@/components/ui/badge'
 
-const HomePage = () => {
+const AboutPage = () => {
     return (
-        <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+        <div className="pb-8">
             <Profile />
 
-            {/* Works Section */}
-            <section>
-                <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-6 lg:mb-8 text-center text-primary flex items-center justify-center gap-2">
-                    Works
-                </h2>
-                <ProjectCarousel projects={worksData} />
-            </section>
+            <Activities />
 
-            {/* Latest Articles Section */}
-            {/* <section className="mx-4 sm:mx-8 lg:mx-16">
-                <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-6 lg:mb-8 text-center text-primary flex items-center justify-center gap-2">
-                    Latest Posts
-                </h2>
-                <div className="text-center mb-8 text-base sm:text-lg">記事はまだありません。</div>
-            </section> */}
+            <Location />
+
+            <Languages />
+
+            <Section icon={SquareTerminal} title="Main Editor">
+                <Badge variant="default" className="text-sm px-3 py-1">
+                    Emacs
+                </Badge>
+            </Section>
+
+            <Links />
+
+            <Education />
+            <Certifications />
         </div>
     )
 }
 
-export default HomePage
+export default AboutPage
