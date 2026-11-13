@@ -2,12 +2,14 @@
     {
         "date": "2024-02",
         "title": "高知龍馬マラソン2024 出場",
-        "description": "フルマラソン初めて完走した"
+        "description": "フルマラソン初めて完走した",
+        "link": "https://past.ryoma-marathon.jp/2024/"
     },
     {
         "date": "2024-03",
         "title": "42 Tokyo Piscine 受験",
-        "description": "受かりました"
+        "description": "受かりました",
+        "link": "https://42tokyo.jp/"
     },
     {
         "date": "2024-09",
@@ -18,17 +20,26 @@
     {
         "date": "2024-10",
         "title": "横浜マラソン2024 出場",
-        "description": "完走した。半分くらい首都高で、つまらなかった"
+        "description": "完走した。半分くらい首都高で、つまらなかった",
+        "link": "https://yokohamamarathon.jp/past/"
+    },
+    {
+        "date": "2024-11",
+        "title": "かわさき多摩川マラソン2024 出場",
+        "description": "初めてハーフ走ったけど、キツイ。完走した",
+        "link": "https://tamagawa-run.jp/marathon/2024/"
     },
     {
         "date": "2025-02",
         "title": "高知龍馬マラソン2025 出場",
-        "description": "完走した。エイドステーションの食べ物がうまい"
+        "description": "完走した。エイドステーションの食べ物がうまい",
+        "link": "https://past.ryoma-marathon.jp/2025/"
     },
     {
         "date": "2025-03",
         "title": "東京マラソン2025 出場",
-        "description": "完走した。まず倍率高いのに当選してラッキー"
+        "description": "完走した。まず倍率高いのに当選してラッキー",
+        "link": "https://www.marathon.tokyo/about/past/2025/"
     },
     {
         "date": "2025-07",
@@ -40,14 +51,10 @@
         "title": "無職になる"
     },
     {
-        "date": "2025-11",
-        "title": "かわさき多摩川マラソン2025 出場",
-        "description": "初めてハーフ走ったけど、キツイ。完走した"
-    },
-    {
         "date": "2026-01",
         "title": "文学フリマ京都10 出店",
-        "description": "社会のダニという一人サークルで出店。逆SDGs というタイトルの作品を出した。2年くらい書き溜めたゴミ。買ってくれる変な人が少しいました"
+        "description": "社会のダニという一人サークルで出店。逆SDGs というタイトルの作品を出した。2年くらい書き溜めたゴミ。買ってくれる変な人が少しいました",
+        "link": "https://bunfree.net/event/kyoto10/"
     },
     {
         "date": "2026-03",
@@ -67,10 +74,12 @@
     {
         "date": "2026-10",
         "title": "インド仏教で得度",
-        "description": "インド マハーラーシュトラ州 ナーグプル。インド仏教の最高指導者 佐々井秀嶺師の元で得度。ナーガ・シーラ、龍戒 という戒名を授かる"
+        "description": "インド マハーラーシュトラ州 ナーグプル。インド仏教の最高指導者 佐々井秀嶺師の元で得度。ナーガ・シーラ、龍戒 という戒名を授かる",
+        "link": "https://sasaiarchives.com/"
     },
     {
         "date": "2026-10",
-        "title": "札幌市消防団に入団"
+        "title": "札幌市消防団に入団",
+        "link": "https://www.city.sapporo.jp/shobo/shokai/dan/dan.html"
     }
 ]

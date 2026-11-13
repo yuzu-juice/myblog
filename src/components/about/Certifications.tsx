@@ -47,17 +47,17 @@ const Certifications = () => {
                             className="flex flex-col sm:flex-row justify-between sm:items-center gap-1 py-3 border-b border-border/40 last:border-b-0"
                         >
                             <div>
-                                <span className="font-medium text-sm">{cert.name}</span>
+                                <span className="font-medium text-base sm:text-sm">{cert.name}</span>
                                 {category === 'その他' && cert.org && (
-                                    <span className="ml-2 text-muted-foreground text-xs">- {cert.org}</span>
+                                    <span className="ml-2 text-muted-foreground text-sm">- {cert.org}</span>
                                 )}
                             </div>
                             <div className="text-left sm:text-right mt-1 sm:mt-0">
-                                <span className="block text-xs text-muted-foreground">
+                                <span className="block text-sm text-muted-foreground">
                                     発行: {formatMonth(cert.issueDate)}
                                 </span>
                                 {cert.expireDate && (
-                                    <span className="block text-xs text-muted-foreground">
+                                    <span className="block text-sm text-muted-foreground">
                                         失効: {formatMonth(cert.expireDate)}
                                         {isExpired(cert.expireDate) && '（失効済）'}
                                     </span>
@@ -74,7 +74,7 @@ const Certifications = () => {
         <Section icon={ShieldCheck} title="Certifications">
             <AccordionList
                 items={items}
-                triggerClassName="text-sm font-semibold text-foreground hover:no-underline"
+                triggerClassName="text-base font-semibold text-foreground hover:no-underline sm:text-sm"
             />
         </Section>
     )

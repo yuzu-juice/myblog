@@ -50,7 +50,7 @@ const Activities = () => {
                                 )}
                             </p>
                             {activity.description && (
-                                <p className="mt-1 text-sm text-muted-foreground">{activity.description}</p>
+                                <p className="mt-1 text-base text-muted-foreground sm:text-sm">{activity.description}</p>
                             )}
                         </div>
                     </DateRow>
@@ -63,7 +63,7 @@ const Activities = () => {
         <Section icon={CalendarDays} title="Activities">
             <AccordionList
                 items={items}
-                triggerClassName="text-sm font-semibold text-foreground hover:no-underline"
+                triggerClassName="text-base font-semibold text-foreground hover:no-underline sm:text-sm"
             />
         </Section>
     )
