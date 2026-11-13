@@ -26,7 +26,7 @@ const generatePeriod = (startDate: string, endDate: string | null) => {
 
 const Education = () => {
     return (
-        <Section icon={GraduationCap} title="Educational background">
+        <Section icon={GraduationCap} title="Educations">
             <div className="space-y-6">
                 {educationData.map((entry: EducationEntry) => (
                     <div key={entry.institution} className="border-l-2 border-primary/60 pl-4">

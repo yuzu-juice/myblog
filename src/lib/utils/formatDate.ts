@@ -26,6 +26,9 @@ export const formatMonth = (value: string | Date) => {
 
 export const getYear = (value: string) => value.slice(0, 4)
 
-export const getMonthNumber = (value: string) => Number(value.slice(5, 7))
+export const getMonthNumber = (value: string) => {
+    const month = Number(value.slice(5, 7))
+    return month > 0 ? month : null
+}
 
 export const isExpiredMonth = (date: Date) => jstYearMonth(date) < jstYearMonth(new Date())

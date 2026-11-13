@@ -11,9 +11,10 @@ export interface AccordionListItem {
 interface AccordionListProps {
     items: AccordionListItem[]
     triggerClassName?: string
+    showCloseButton?: boolean
 }
 
-const AccordionList = ({ items, triggerClassName }: AccordionListProps) => {
+const AccordionList = ({ items, triggerClassName, showCloseButton = true }: AccordionListProps) => {
     const [openItem, setOpenItem] = useState<string>('')
 
     return (
@@ -23,11 +24,13 @@ const AccordionList = ({ items, triggerClassName }: AccordionListProps) => {
                     <AccordionTrigger className={triggerClassName}>{item.trigger}</AccordionTrigger>
                     <AccordionContent>
                         {item.content}
-                        <div className="mt-4 flex justify-end">
-                            <Button variant="outline" size="sm" onClick={() => setOpenItem('')}>
-                                閉じる
-                            </Button>
-                        </div>
+                        {showCloseButton && (
+                            <div className="mt-4 flex justify-end">
+                                <Button variant="outline" size="sm" onClick={() => setOpenItem('')}>
+                                    閉じる
+                                </Button>
+                            </div>
+                        )}
                     </AccordionContent>
                 </AccordionItem>
             ))}
